@@ -86,13 +86,13 @@
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) || email.length > 254) { showErr("Falta um email válido."); input.focus(); return; }
       err.style.display = "none";
       var btnLabel = btn.textContent; btn.disabled = true; btn.textContent = "A enviar…";
-      fetch(SUPABASE_URL + "/rest/v1/lista_espera?on_conflict=email", {
+      fetch(SUPABASE_URL + "/rest/v1/lista_espera", {
         method: "POST",
         headers: {
           "apikey": SUPABASE_KEY,
           "Authorization": "Bearer " + SUPABASE_KEY,
           "Content-Type": "application/json",
-          "Prefer": "resolution=ignore-duplicates,return=minimal"
+          "Prefer": "return=minimal"
         },
         body: JSON.stringify({ email: email, plataforma: plat, origem: location.pathname || "/" })
       }).then(function (res) {
