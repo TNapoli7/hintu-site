@@ -101,7 +101,7 @@
         if (plat === "android") { var w = $(".when", form); if (w) w.textContent = "assim que houver versão para Android"; }
         form.classList.add("done");
       }).catch(function () {
-        showErr("Não conseguimos guardar agora. Tente de novo daqui a pouco ou escreva para ola@hintu.pt.");
+        showErr("Não conseguimos guardar agora. Tente de novo daqui a pouco ou escreva para apoio@hintu.pt.");
       }).then(function () { btn.disabled = false; btn.textContent = btnLabel; });
     });
   }
