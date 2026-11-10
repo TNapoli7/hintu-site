@@ -33,7 +33,7 @@ RewriteRule ^([a-z0-9-]+)/?$ $1.html [L]
     Header set Cache-Control "public, max-age=86400"
   </FilesMatch>
   <FilesMatch "\.html$">
-    Header set Cache-Control "public, max-age=300"
+    Header set Cache-Control "no-cache"
   </FilesMatch>
 </IfModule>
 
