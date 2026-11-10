@@ -13,16 +13,17 @@
       a.setAttribute("href", STORE);
       a.setAttribute("rel", "noopener");
       var span = a.querySelector("span");
-      var label = a.hasAttribute("data-cta-short") ? "Descarregar" : "Descarregar na App Store";
+      var label = a.hasAttribute("data-cta-short") ? "Descarregar" : "Experimentar grátis no iPhone";
       if (span) span.textContent = label; else a.textContent = label;
     });
     $$("[data-store-only]").forEach(function (a) { a.hidden = false; a.setAttribute("href", STORE); });
-    var micro = $("[data-micro]"); if (micro) micro.textContent = "Para iPhone · Sem anúncios, nunca · Feito em Portugal";
-    var note = $("[data-sticky-note]"); if (note) note.textContent = "Para iPhone · sem anúncios";
+    var micro = $("[data-micro]"); if (micro) micro.textContent = "Grátis para começar · iPhone · Sem anúncios, nunca";
+    var note = $("[data-sticky-note]"); if (note) note.textContent = "Grátis para começar · Sem anúncios";
     var faq = $("[data-faq-install]"); if (faq) faq.textContent = "Pela App Store, como qualquer outra app. Toque no botão desta página ou procure por «Hintu» na App Store.";
     var t = $("[data-final-title]"); if (t) t.textContent = "Tem iPhone? Comece hoje.";
     var l = $("[data-final-lead]"); if (l) l.textContent = "Ainda sem versão para Android. Deixe o email e avisamos uma vez, quando houver. Sem newsletters.";
     var android = $('input[name="plataforma"][value="android"]'); if (android) android.checked = true;
+    var sb = $('form.wait button[type="submit"]'); if (sb) sb.textContent = "Quero a versão Android";
     var when = $(".when"); if (when) when.textContent = "assim que houver versão para Android";
   }
 
@@ -32,12 +33,13 @@
       a.setAttribute("href", "#lista");
       var svg = a.querySelector("svg"); if (svg) svg.remove();
       var span = a.querySelector("span");
-      var label = a.hasAttribute("data-cta-short") ? "Avisem-me" : "Avisem-me quando houver Android";
+      var label = a.hasAttribute("data-cta-short") ? "Versão Android" : "Quero a versão Android";
       if (span) span.textContent = label; else a.textContent = label;
     });
     var m = $("[data-micro]"); if (m) m.textContent = "Por agora só para iPhone · Android a seguir";
-    var n = $("[data-sticky-note]"); if (n) n.textContent = "Por agora só iPhone · avisamos uma vez";
+    var n = $("[data-sticky-note]"); if (n) n.textContent = "Por agora só iPhone · enviamos o link quando houver";
     var r = $('input[name="plataforma"][value="android"]'); if (r) r.checked = true;
+    var sb2 = $('form.wait button[type="submit"]'); if (sb2) sb2.textContent = "Quero a versão Android";
     var w = $(".when"); if (w) w.textContent = "assim que houver versão para Android";
   }
 
@@ -83,7 +85,7 @@
       var showErr = function (msg) { err.textContent = msg; err.style.display = "block"; };
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) || email.length > 254) { showErr("Falta um email válido."); input.focus(); return; }
       err.style.display = "none";
-      btn.disabled = true; btn.textContent = "A enviar…";
+      var btnLabel = btn.textContent; btn.disabled = true; btn.textContent = "A enviar…";
       fetch(SUPABASE_URL + "/rest/v1/lista_espera?on_conflict=email", {
         method: "POST",
         headers: {
@@ -100,7 +102,7 @@
         form.classList.add("done");
       }).catch(function () {
         showErr("Não conseguimos guardar agora. Tente de novo daqui a pouco ou escreva para ola@hintu.pt.");
-      }).then(function () { btn.disabled = false; btn.textContent = "Avisem-me"; });
+      }).then(function () { btn.disabled = false; btn.textContent = btnLabel; });
     });
   }
 })();
