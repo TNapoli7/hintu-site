@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hintu · Explicador com IA para o 5.º ano (Matemática, Português e HGP)</title>
+<meta name="description" content="Exercícios do 5.º ano de Matemática, Português e HGP com um companheiro de IA que dá pistas em vez de respostas. Os pais decidem o tempo e o horário e veem as conversas.">
+<link rel="canonical" href="https://hintu.pt/">
+<meta name="theme-color" content="#FFF7EC">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_PT">
+<meta property="og:site_name" content="Hintu">
+<meta property="og:url" content="https://hintu.pt/">
+<meta property="og:title" content="Hintu · O companheiro de estudo que ensina a pensar">
+<meta property="og:description" content="Exercícios do 5.º ano com um companheiro de IA que dá pistas em vez de respostas. Os pais controlam o tempo e veem tudo.">
+<meta property="og:image" content="https://hintu.pt/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/assets/fonts/baloo-2-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/nunito-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://hintu.pt/#org",
+      "name": "Hintu",
+      "url": "https://hintu.pt/",
+      "logo": "https://hintu.pt/apple-touch-icon.png",
+      "email": "ola@hintu.pt"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://hintu.pt/#site",
+      "url": "https://hintu.pt/",
+      "name": "Hintu",
+      "inLanguage": "pt-PT",
+      "publisher": {"@id": "https://hintu.pt/#org"}
+    },
+    {
+      "@type": "MobileApplication",
+      "name": "Hintu",
+      "operatingSystem": "iOS",
+      "applicationCategory": "EducationalApplication",
+      "inLanguage": "pt-PT",
+      "description": "Exercícios do 5.º ano de Matemática, Português e HGP com um companheiro de IA que dá pistas em vez de respostas, com controlo parental de tempo e horário.",
+      "publisher": {"@id": "https://hintu.pt/#org"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "A IA faz os trabalhos de casa por ele?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Dá pistas, faz perguntas e explica depois de ele tentar. Está proibida de dar a resposta de um exercício antes disso."}},
+        {"@type": "Question", "name": "Serve para estudar para os testes do 5.º ano?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Os exercícios seguem os temas do 5.º ano em Matemática, Português e HGP, e o companheiro explica de outra forma quando o aluno erra."}},
+        {"@type": "Question", "name": "Para que idades é?", "acceptedAnswer": {"@type": "Answer", "text": "Começamos pelo 5.º ano (cerca de 10 anos). Os outros anos vêm a seguir."}},
+        {"@type": "Question", "name": "Funciona em Android?", "acceptedAnswer": {"@type": "Answer", "text": "Ainda não. Deixe o email no fim da página e avisamos assim que houver."}},
+        {"@type": "Question", "name": "Que dados guardam do meu filho?", "acceptedAnswer": {"@type": "Answer", "text": "A alcunha, o ano, as respostas aos exercícios e as conversas com o companheiro, para as poder ver. Pode apagar tudo a qualquer momento."}},
+        {"@type": "Question", "name": "E se o companheiro disser algo errado?", "acceptedAnswer": {"@type": "Answer", "text": "Pode acontecer, como a qualquer pessoa. O seu filho pode reportar qualquer resposta com um toque, e os pais veem o aviso na área dos pais."}}
+      ]
+    }
+  ]
+}
+</script>
+<script>
+  // Configuração do lançamento. No dia em que a app estiver na App Store, cola aqui o link.
+  window.HINTU = { appStoreUrl: "" };
+</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+
+<header class="site">
+  <nav class="main wrap" aria-label="Principal">
+    <a href="/" class="logo" aria-label="Hintu, página inicial"><img src="/assets/v-curto-chapeu.svg" alt="" width="40" height="44"><span>Hintu</span></a>
+    <button class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+      <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#12263A" stroke-width="2.5" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <a href="#como">Como funciona</a>
+      <a href="#materia">O que se estuda</a>
+      <a href="#pais">Para os pais</a>
+      <a href="#seguranca">Segurança</a>
+      <a href="#perguntas">Perguntas</a>
+      <a href="#lista" class="btn btn-coral btn-sm" data-cta data-cta-short>Avisem-me</a>
+    </div>
+  </nav>
+</header>
+
+<main id="conteudo">
+<section id="topo" class="hero wrap">
+  <div class="hero-copy">
+    <span class="badge">5.º ANO · MATEMÁTICA, PORTUGUÊS E HGP</span>
+    <h1>Um companheiro de estudo que ensina a pensar. Não a copiar.</h1>
+    <p class="sub">Exercícios do 5.º ano com um explicador de IA que dá pistas em vez de respostas. E é você que decide quanto tempo, a que horas, e vê tudo o que ele conversa.</p>
+    <div class="cta-row">
+      <a href="#lista" class="btn btn-coral" data-cta>
+        <svg class="apple" viewBox="0 0 18 22" aria-hidden="true"><path d="M14.9 11.7c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9C4.4 5.9 2.8 7 1.9 8.6c-1.8 3.2-.5 7.9 1.3 10.5.9 1.3 1.9 2.7 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.6 1-1.5 1.4-2.9 1.4-3 0 0-2.7-1-2.7-4.4zM12.4 4.1c.7-.9 1.2-2 1.1-3.1-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3 1.1.1 2.3-.6 3-1.5z" fill="#FFFFFF"/></svg>
+        <span>Avisem-me quando sair</span>
+      </a>
+      <a href="#como" class="link-strong" data-alt>Ver como funciona</a>
+    </div>
+    <p class="micro" data-micro>Em breve na App Store · Para iPhone · Sem anúncios, nunca</p>
+  </div>
+
+  <div class="hero-art">
+    <div class="sun" aria-hidden="true"></div>
+    <div class="phone" role="img" aria-label="Ecrã da app: exercício de frações com o companheiro a oferecer uma pista">
+      <div class="screen">
+        <div class="screen-top"><span>Frações e decimais</span><span class="streak">3 seguidas</span></div>
+        <div class="bar"><i></i></div>
+        <p class="q display">Qual destas frações é equivalente a 1/2?</p>
+        <div class="opts">
+          <div class="opt"><b>A</b>2/3</div>
+          <div class="opt"><b>B</b>3/6</div>
+          <div class="opt"><b>C</b>2/5</div>
+          <div class="opt"><b>D</b>4/10</div>
+        </div>
+        <div class="hint">
+          <img src="/assets/pensar.svg" alt="" width="70" height="77">
+          <p>Hmm, não tens a certeza? Pista: metade quer dizer que o de baixo é o dobro do de cima.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust" aria-label="Garantias">
+  <div class="wrap">
+    <span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#0E6E78" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h14v16H6a2 2 0 0 0-2 2z"/></svg>Temas do programa do 5.º ano</span>
+    <span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#0E6E78" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg>Sem anúncios, sem venda de dados</span>
+    <span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#0E6E78" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Área dos pais com PIN</span>
+    <span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#0E6E78" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-11a7 7 0 0 1 14 0c0 6.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Feito em Portugal</span>
+  </div>
+</section>
+
+<section class="section wrap" aria-labelledby="h-conhece">
+  <h2 id="h-conhece" class="h2">Conhece isto?</h2>
+  <div class="grid3">
+    <div class="card"><p class="quote display">«Não percebo nada de frações.»</p><p>São 19h, há jantar para fazer e a matéria já não é a do seu tempo.</p></div>
+    <div class="card"><p class="quote display">«É só para estudar, juro.»</p><p>O telemóvel sai para os trabalhos de casa e acaba num vídeo qualquer.</p></div>
+    <div class="card"><p class="quote display">«A IA fez-me o trabalho.»</p><p>Os chatbots dão a resposta feita. Ele copia e não aprende nada.</p></div>
+  </div>
+</section>
+
+<section id="como" class="section wrap" aria-labelledby="h-como" style="padding-top:56px">
+  <div style="display:flex;flex-direction:column;gap:10px">
+    <span class="eyebrow">COMO FUNCIONA</span>
+    <h2 id="h-como" class="h2">A funcionar em 3 minutos</h2>
+  </div>
+  <ol class="steps grid3">
+    <li class="step"><span class="n">1</span><p class="t">Cria a conta da família</p><p>Com o seu email. O seu filho só tem uma alcunha: sem nome, escola ou fotografias.</p></li>
+    <li class="step"><span class="n">2</span><p class="t">Ele escolhe o companheiro</p><p>Dá-lhe nome, cabelo, cor e personalidade. Fica com vontade de voltar.</p></li>
+    <li class="step"><span class="n">3</span><p class="t">Estuda um pouco todos os dias</p><p>Uma meta de 5 exercícios por dia e uma contagem de dias seguidos. Quando erra, o companheiro explica de outra forma.</p></li>
+  </ol>
+</section>
+
+<section class="teal" aria-labelledby="h-comp">
+  <div class="wrap">
+    <div class="copy">
+      <span class="eyebrow">O COMPANHEIRO</span>
+      <h2 id="h-comp" class="h2">Dá pistas. Nunca dá a resposta.</h2>
+      <p class="lead">É uma inteligência artificial e diz sempre que é. Fala português de Portugal, com frases curtas e paciência infinita. Quando o seu filho erra, explica passo a passo e propõe outro exemplo.</p>
+      <div class="avatars" aria-label="Alguns companheiros que a criança pode criar">
+        <img src="/assets/v-curto-chapeu.svg" alt="Companheiro de chapéu" width="76" height="84">
+        <img src="/assets/v-comprido-nenhum.svg" alt="Companheira de cabelo comprido" width="76" height="84">
+        <img src="/assets/v-encaracolado-nenhum.svg" alt="Companheiro de cabelo encaracolado" width="76" height="84">
+        <img src="/assets/v-curto-oculos.svg" alt="Companheiro de óculos" width="76" height="84">
+        <img src="/assets/v-apanhado-nenhum.svg" alt="Companheira de cabelo apanhado" width="76" height="84">
+      </div>
+    </div>
+    <div class="chat" role="group" aria-label="Exemplo de conversa">
+      <p class="me">Diz-me só a resposta, é a B?</p>
+      <div class="it"><img src="/assets/pensar.svg" alt="" width="56" height="62"><p>Quase lá! Antes de escolheres: em 1/2, o 2 é o dobro do 1. Em qual das opções o número de baixo é o dobro do de cima?</p></div>
+      <p class="me">Ahh, 3/6!</p>
+      <div class="it"><img src="/assets/celebrar.svg" alt="" width="56" height="62"><p>Isso! Descobriste sozinho. Mais uma?</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="materia" class="section wrap" aria-labelledby="h-materia">
+  <div style="display:flex;flex-direction:column;gap:10px;max-width:760px">
+    <span class="eyebrow">O QUE SE ESTUDA</span>
+    <h2 id="h-materia" class="h2">A matéria do 5.º ano, tema a tema</h2>
+    <p class="lead">Exercícios organizados pelos temas que o seu filho está a dar na escola, com explicações para cada resposta. Bons para os trabalhos de casa e para os testes.</p>
+  </div>
+  <div class="subjects">
+    <div class="subj">
+      <span class="tag">5 temas</span>
+      <h3>Matemática 5.º ano</h3>
+      <ul>
+        <li>Números naturais</li>
+        <li>Frações e decimais</li>
+        <li>Ângulos e triângulos</li>
+        <li>Área e perímetro</li>
+        <li>Tabelas e gráficos</li>
+      </ul>
+    </div>
+    <div class="subj">
+      <span class="tag">5 temas</span>
+      <h3>Português 5.º ano</h3>
+      <ul>
+        <li>Classes de palavras</li>
+        <li>Tempos verbais</li>
+        <li>Ortografia e acentuação</li>
+        <li>Sinónimos e antónimos</li>
+        <li>Frase e funções sintáticas</li>
+      </ul>
+    </div>
+    <div class="subj">
+      <span class="tag">5 temas</span>
+      <h3>HGP 5.º ano</h3>
+      <ul>
+        <li>A Península Ibérica: localização e quadro natural</li>
+        <li>Primeiros povos da Península</li>
+        <li>Os Romanos na Península</li>
+        <li>Os Muçulmanos na Península</li>
+        <li>A formação de Portugal</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="pais" class="section wrap" aria-labelledby="h-pais" style="padding-bottom:56px">
+  <div style="display:flex;flex-direction:column;gap:10px;max-width:720px">
+    <span class="eyebrow">PARA OS PAIS</span>
+    <h2 id="h-pais" class="h2">Você manda. A app cumpre.</h2>
+    <p class="lead">Tudo o que é dos pais fica atrás de um PIN que só você sabe.</p>
+  </div>
+  <div class="parents-row">
+    <div class="feat">
+      <div><p class="t">Tempo por dia</p><p>Escolhe quantos minutos por dia. Aos 2 minutos do fim, ele recebe um aviso.</p></div>
+      <div><p class="t">Horário e dias</p><p>Por exemplo, das 17h às 20h, só em dias de escola. Fora disso, a app fecha.</p></div>
+      <div><p class="t">Vê as conversas</p><p>Tudo o que ele pergunta ao companheiro, e o que ficou assinalado.</p></div>
+      <div><p class="t">Progresso semanal</p><p>Exercícios, taxa de acerto por disciplina e o tema onde precisa de ajuda.</p></div>
+    </div>
+    <div class="lock" role="img" aria-label="Ecrã de bloqueio da app: Por hoje chega, com botão para os pais">
+      <img src="/assets/feliz.svg" alt="" width="96" height="106">
+      <p class="big display" style="color:#fff">Por hoje chega!</p>
+      <p>45 minutos de estudo · 6 dias seguidos</p>
+      <span class="pill">Sou o pai ou a mãe</span>
+      <small>Com o PIN: +15 min, +30 min ou sem limite hoje.</small>
+    </div>
+  </div>
+</section>
+
+<section id="seguranca" class="safety wrap" aria-labelledby="h-seg">
+  <div class="copy">
+    <span class="eyebrow">SEGURANÇA E PRIVACIDADE</span>
+    <h2 id="h-seg" class="h2">Feito para crianças desde a primeira linha</h2>
+    <p class="lead">Não é um chatbot para adultos com outra cor. As regras estão escritas para uma criança de 10 anos.</p>
+    <a href="/privacidade" style="font-weight:800;font-size:16px">Ler a política de privacidade</a>
+  </div>
+  <ul class="checks">
+    <li><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1E7A47" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span><b>Só uma alcunha.</b> Nada de nome completo, escola, fotos ou localização.</span></li>
+    <li><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1E7A47" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span><b>Dados pessoais apagados</b> antes de qualquer mensagem chegar à IA.</span></li>
+    <li><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1E7A47" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span><b>Temas impróprios desviados</b> com calma, sem sermões.</span></li>
+    <li><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1E7A47" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span><b>Sinais de risco:</b> indica o 116 111 (SOS Criança) e avisa os pais.</span></li>
+    <li><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1E7A47" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span><b>Sem anúncios, sem links,</b> sem recomendar apps ou redes sociais.</span></li>
+    <li><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1E7A47" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span><b>Apaga tudo quando quiser,</b> na área dos pais.</span></li>
+  </ul>
+</section>
+
+<section class="founders wrap" aria-labelledby="h-fund">
+  <div class="box">
+    <div class="copy">
+      <span class="tag">AS PRIMEIRAS FAMÍLIAS</span>
+      <h2 id="h-fund">Seja uma das famílias fundadoras</h2>
+      <ul>
+        <li>Fala diretamente connosco: o que pedir, nós construímos</li>
+        <li>Ajuda a decidir que disciplinas e anos vêm a seguir</li>
+      </ul>
+      <div class="cta-row">
+        <a href="#lista" class="btn btn-ink" data-cta>
+          <svg class="apple" viewBox="0 0 18 22" aria-hidden="true"><path d="M14.9 11.7c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9C4.4 5.9 2.8 7 1.9 8.6c-1.8 3.2-.5 7.9 1.3 10.5.9 1.3 1.9 2.7 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.6 1-1.5 1.4-2.9 1.4-3 0 0-2.7-1-2.7-4.4zM12.4 4.1c.7-.9 1.2-2 1.1-3.1-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3 1.1.1 2.3-.6 3-1.5z" fill="#FFFFFF"/></svg>
+          <span>Quero ser dos primeiros</span>
+        </a>
+      </div>
+    </div>
+    <div class="pals" aria-hidden="true">
+      <img src="/assets/v-comprido-nenhum.svg" alt="" width="92" height="101">
+      <img src="/assets/celebrar.svg" alt="" width="110" height="121">
+      <img src="/assets/v-curto-oculos.svg" alt="" width="92" height="101">
+    </div>
+  </div>
+</section>
+
+<section id="perguntas" class="faq" aria-labelledby="h-faq">
+  <h2 id="h-faq" class="h2">Perguntas dos pais</h2>
+  <div style="display:flex;flex-direction:column;gap:10px">
+    <details open><summary>A IA faz os trabalhos de casa por ele?</summary><p>Não. Dá pistas, faz perguntas e explica depois de ele tentar. Está proibida de dar a resposta de um exercício antes disso.</p></details>
+    <details><summary>Serve para estudar para os testes do 5.º ano?</summary><p>Sim. Os exercícios seguem os temas do 5.º ano em Matemática, Português e HGP, e o companheiro explica de outra forma quando o aluno erra.</p></details>
+    <details><summary>Para que idades é?</summary><p>Começamos pelo 5.º ano (cerca de 10 anos). Os outros anos vêm a seguir.</p></details>
+    <details><summary>Quando posso instalar?</summary><p data-faq-install>A Hintu chega à App Store em breve. Deixe o email no fim da página e avisamos no próprio dia.</p></details>
+    <details><summary>Funciona em Android?</summary><p>Ainda não. Deixe o email no fim da página e avisamos assim que houver.</p></details>
+    <details><summary>Que dados guardam do meu filho?</summary><p>A alcunha, o ano, as respostas aos exercícios e as conversas com o companheiro, para as poder ver. Pode apagar tudo a qualquer momento. Os detalhes estão na <a href="/privacidade">política de privacidade</a>.</p></details>
+    <details><summary>E se o companheiro disser algo errado?</summary><p>Pode acontecer, como a qualquer pessoa. O seu filho pode reportar qualquer resposta com um toque, e os pais veem o aviso na área dos pais.</p></details>
+  </div>
+</section>
+
+<section id="lista" class="final" aria-labelledby="h-final">
+  <div class="wrap">
+    <div class="copy">
+      <h2 id="h-final" class="h2" data-final-title>Seja dos primeiros a experimentar.</h2>
+      <p class="lead" data-final-lead>Deixe o email e avisamos no dia em que a Hintu chegar à App Store. Um email, sem newsletters.</p>
+      <a href="#" class="btn btn-coral" data-store-only hidden style="align-self:flex-start">
+        <svg class="apple" viewBox="0 0 18 22" aria-hidden="true"><path d="M14.9 11.7c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9C4.4 5.9 2.8 7 1.9 8.6c-1.8 3.2-.5 7.9 1.3 10.5.9 1.3 1.9 2.7 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.6 1-1.5 1.4-2.9 1.4-3 0 0-2.7-1-2.7-4.4zM12.4 4.1c.7-.9 1.2-2 1.1-3.1-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3 1.1.1 2.3-.6 3-1.5z" fill="#FFFFFF"/></svg>
+        <span>Descarregar na App Store</span>
+      </a>
+    </div>
+    <form class="wait" novalidate>
+      <div class="fields">
+        <label for="email-lista">Email do pai ou da mãe</label>
+        <input id="email-lista" name="email" type="email" placeholder="nome@exemplo.pt" autocomplete="email" inputmode="email" required>
+        <fieldset class="plat">
+          <legend>Que telemóvel tem?</legend>
+          <label><input type="radio" name="plataforma" value="ios" checked> iPhone</label>
+          <label><input type="radio" name="plataforma" value="android"> Android</label>
+        </fieldset>
+        <p class="err" role="alert"></p>
+        <button type="submit" class="btn btn-ink" style="width:100%;font-size:17px">Avisem-me</button>
+        <p class="fine">Usamos o email só para este aviso. Pode pedir para o apagar a qualquer momento. <a href="/privacidade">Privacidade</a></p>
+      </div>
+      <div class="thanks" aria-live="polite">
+        <p class="display" style="font-size:26px;line-height:1.1">Obrigado!</p>
+        <p style="font-size:16px;line-height:1.5;color:#3A4B5C">Avisamos <b class="who"></b> <span class="when">no dia em que a Hintu chegar à App Store</span>.</p>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="site wrap">
+  <span>© 2026 Hintu · Feito em Portugal</span>
+  <nav aria-label="Rodapé">
+    <a href="/privacidade">Privacidade</a>
+    <a href="mailto:ola@hintu.pt">ola@hintu.pt</a>
+  </nav>
+</footer>
+
+<div class="sticky-cta" aria-hidden="true">
+  <a href="#lista" class="btn btn-coral" data-cta tabindex="-1">
+    <svg class="apple" viewBox="0 0 18 22" aria-hidden="true"><path d="M14.9 11.7c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9C4.4 5.9 2.8 7 1.9 8.6c-1.8 3.2-.5 7.9 1.3 10.5.9 1.3 1.9 2.7 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.6 1-1.5 1.4-2.9 1.4-3 0 0-2.7-1-2.7-4.4zM12.4 4.1c.7-.9 1.2-2 1.1-3.1-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3 1.1.1 2.3-.6 3-1.5z" fill="#FFFFFF"/></svg>
+    <span>Avisem-me quando sair</span>
+  </a>
+  <p data-sticky-note>Em breve na App Store · para iPhone</p>
+</div>
+
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
