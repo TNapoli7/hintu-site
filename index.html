@@ -56,7 +56,7 @@
       "applicationCategory": "EducationalApplication",
       "url": "https://hintu.pt/",
       "inLanguage": "pt-PT",
-      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
+      "offers": {"@type": "AggregateOffer", "lowPrice": "10", "highPrice": "15", "priceCurrency": "EUR", "offerCount": 2},
       "audience": {"@type": "EducationalAudience", "educationalRole": "student", "audienceType": "Alunos do ensino básico"},
       "description": "App para estudar com um explicador de IA que dá pistas em vez de respostas. Exercícios de Matemática, Português e HGP segundo as Aprendizagens Essenciais, a começar pelo 5.º ano, com controlo parental de tempo e horário.",
       "publisher": {"@id": "https://hintu.pt/#org"}
@@ -66,8 +66,8 @@
       "mainEntity": [
         {"@type": "Question", "name": "A IA faz os trabalhos de casa por ele?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Dá pistas, faz perguntas e explica depois de ele tentar. Está proibida de dar a resposta de um exercício antes disso."}},
         {"@type": "Question", "name": "Serve para estudar para os testes?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Os exercícios seguem os temas que estão a dar na escola, segundo as Aprendizagens Essenciais, e o companheiro explica de outra forma quando o aluno erra. Neste momento cobrimos o 5.º ano em Matemática, Português e HGP."}},
-        {"@type": "Question", "name": "Para que idades é?", "acceptedAnswer": {"@type": "Answer", "text": "Para o ensino básico. Começamos pelo 5.º ano (10 a 11 anos) e vamos acrescentar os outros anos, pela ordem que as famílias fundadoras escolherem."}},
-        {"@type": "Question", "name": "Quanto custa?", "acceptedAnswer": {"@type": "Answer", "text": "É grátis para começar."}},
+        {"@type": "Question", "name": "Para que idades é?", "acceptedAnswer": {"@type": "Answer", "text": "Para o ensino básico. Começamos pelo 5.º ano (10 a 11 anos) e vamos acrescentar os outros anos, pela ordem que as primeiras famílias escolherem."}},
+        {"@type": "Question", "name": "Quanto custa?", "acceptedAnswer": {"@type": "Answer", "text": "Os primeiros 14 dias são grátis. Depois: 10 € por mês (1 filho) ou 15 € por mês (2 ou mais filhos). Cancele quando quiser."}},
         {"@type": "Question", "name": "É diferente do ChatGPT?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. O ChatGPT dá a resposta feita. A Hintu está proibida de a dar antes de o seu filho tentar, foi feita só para crianças e os pais veem todas as conversas (a conversa livre só existe se os pais a ligarem)."}},
         {"@type": "Question", "name": "Funciona em Android?", "acceptedAnswer": {"@type": "Answer", "text": "Ainda não. Deixe o email no fim da página, escolha Android, e enviamos o link quando houver."}},
         {"@type": "Question", "name": "Que dados guardam do meu filho?", "acceptedAnswer": {"@type": "Answer", "text": "A alcunha, o ano, as respostas aos exercícios e as conversas com o companheiro, para as poder ver. Pode apagar tudo a qualquer momento."}},
@@ -110,12 +110,11 @@
     <p class="sub">Exercícios do programa português com um explicador de IA que puxa pelo raciocínio do seu filho. Você decide o tempo e o horário, e vê todas as conversas.</p>
     <div class="cta-row">
       <a href="#lista" class="btn btn-coral" data-cta>
-        <svg class="apple" viewBox="0 0 18 22" aria-hidden="true"><path d="M14.9 11.7c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9C4.4 5.9 2.8 7 1.9 8.6c-1.8 3.2-.5 7.9 1.3 10.5.9 1.3 1.9 2.7 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.6 1-1.5 1.4-2.9 1.4-3 0 0-2.7-1-2.7-4.4zM12.4 4.1c.7-.9 1.2-2 1.1-3.1-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3 1.1.1 2.3-.6 3-1.5z" fill="#FFFFFF"/></svg>
         <span>Reservar o meu lugar</span>
       </a>
       <a href="#companheiro" class="link-strong" data-alt>Ver uma explicação real</a>
     </div>
-    <p class="micro" data-micro>Grátis para começar · iPhone · Sem anúncios, nunca</p>
+    <p class="micro" data-micro>14 dias grátis · iPhone · Sem anúncios, nunca</p>
   </div>
 
   <div class="hero-art">
@@ -197,7 +196,7 @@
   <div style="display:flex;flex-direction:column;gap:10px;max-width:760px">
     <span class="eyebrow">O QUE SE ESTUDA</span>
     <h2 id="h-materia" class="h2">Segue a matéria que está a dar na escola</h2>
-    <p class="lead">Exercícios organizados pelos temas das Aprendizagens Essenciais, com uma explicação para cada resposta. Bons para os trabalhos de casa e para os testes. Começamos pelo 5.º ano em Matemática, Português e HGP; os próximos anos são escolhidos com as famílias fundadoras.</p>
+    <p class="lead">Exercícios organizados pelos temas das Aprendizagens Essenciais, com uma explicação para cada resposta. Bons para os trabalhos de casa e para os testes. Começamos pelo 5.º ano em Matemática, Português e HGP; os próximos anos são escolhidos com as primeiras famílias.</p>
   </div>
   <div class="subjects">
     <div class="subj">
@@ -276,20 +275,18 @@
   </ul>
 </section>
 
-<section class="founders wrap" aria-labelledby="h-fund">
+<section id="precos" class="founders wrap" aria-labelledby="h-precos">
   <div class="box">
     <div class="copy">
-      <span class="tag">AS PRIMEIRAS FAMÍLIAS</span>
-      <h2 id="h-fund">Seja uma das famílias fundadoras</h2>
-      <ul>
-        <li>Fala diretamente connosco: o que pedir, nós construímos</li>
-        <li>Ajuda a decidir que disciplinas e anos vêm a seguir</li>
+      <span class="tag">PREÇOS</span>
+      <h2 id="h-precos">14 dias grátis. Depois, um preço por família.</h2>
+      <ul class="price-list">
+        <li><span>1 filho</span><b>10 € / mês</b></li>
+        <li><span>2 ou mais filhos</span><b>15 € / mês</b></li>
       </ul>
+      <p class="fine-dark">Tudo incluído: exercícios, companheiro IA e área dos pais. A subscrição é feita na App Store: só é cobrada no fim dos 14 dias e cancela-se quando quiser, nas definições da conta Apple.</p>
       <div class="cta-row">
-        <a href="#lista" class="btn btn-ink" data-cta>
-          <svg class="apple" viewBox="0 0 18 22" aria-hidden="true"><path d="M14.9 11.7c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9C4.4 5.9 2.8 7 1.9 8.6c-1.8 3.2-.5 7.9 1.3 10.5.9 1.3 1.9 2.7 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.6 1-1.5 1.4-2.9 1.4-3 0 0-2.7-1-2.7-4.4zM12.4 4.1c.7-.9 1.2-2 1.1-3.1-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3 1.1.1 2.3-.6 3-1.5z" fill="#FFFFFF"/></svg>
-          <span>Quero ser família fundadora</span>
-        </a>
+        <a href="#lista" class="btn btn-ink" data-cta><span>Reservar o meu lugar</span></a>
       </div>
     </div>
     <div class="pals" aria-hidden="true">
@@ -305,8 +302,8 @@
   <div style="display:flex;flex-direction:column;gap:10px">
     <details open><summary>A IA faz os trabalhos de casa por ele?</summary><p>Não. Dá pistas, faz perguntas e explica depois de ele tentar. Está proibida de dar a resposta de um exercício antes disso.</p></details>
     <details><summary>Serve para estudar para os testes?</summary><p>Sim. Os exercícios seguem os temas que estão a dar na escola, segundo as Aprendizagens Essenciais, e o companheiro explica de outra forma quando o aluno erra. Neste momento cobrimos o 5.º ano em Matemática, Português e HGP.</p></details>
-    <details><summary>Para que idades é?</summary><p>Para o ensino básico. Começamos pelo 5.º ano (10 a 11 anos) e vamos acrescentar os outros anos, pela ordem que as famílias fundadoras escolherem.</p></details>
-    <details><summary>Quanto custa?</summary><p>É grátis para começar.</p></details>
+    <details><summary>Para que idades é?</summary><p>Para o ensino básico. Começamos pelo 5.º ano (10 a 11 anos) e vamos acrescentar os outros anos, pela ordem que as primeiras famílias escolherem.</p></details>
+    <details><summary>Quanto custa?</summary><p>Os primeiros 14 dias são grátis. Depois, 10 € por mês para 1 filho ou 15 € por mês para 2 ou mais filhos. Só é cobrado no fim dos 14 dias e pode cancelar antes, nas definições da conta Apple. <a href="#precos">Ver preços</a></p></details>
     <details><summary>É diferente do ChatGPT?</summary><p>Sim. O ChatGPT dá a resposta feita. A Hintu está proibida de a dar antes de o seu filho tentar, foi feita só para crianças e os pais veem todas as conversas (a conversa livre só existe se os pais a ligarem).</p></details>
     <details><summary>Quando posso instalar?</summary><p data-faq-install>Em breve. Reserve o lugar no fim da página e enviamos o link no dia do lançamento.</p></details>
     <details><summary>Funciona em Android?</summary><p>Ainda não. Deixe o email no fim da página, escolha Android, e enviamos o link quando houver.</p></details>
@@ -352,17 +349,17 @@
   <nav aria-label="Rodapé">
     <a href="/privacidade">Privacidade</a>
     <a href="/termos">Termos</a>
-    <a href="mailto:apoio@hintu.pt">Apoio</a>
+    <a href="/apoio">Apoio</a>
+    <a href="https://www.livroreclamacoes.pt" target="_blank" rel="noopener">Livro de Reclamações</a>
     <a href="mailto:ola@hintu.pt">ola@hintu.pt</a>
   </nav>
 </footer>
 
 <div class="sticky-cta" aria-hidden="true">
   <a href="#lista" class="btn btn-coral" data-cta tabindex="-1">
-    <svg class="apple" viewBox="0 0 18 22" aria-hidden="true"><path d="M14.9 11.7c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9C4.4 5.9 2.8 7 1.9 8.6c-1.8 3.2-.5 7.9 1.3 10.5.9 1.3 1.9 2.7 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.6 1-1.5 1.4-2.9 1.4-3 0 0-2.7-1-2.7-4.4zM12.4 4.1c.7-.9 1.2-2 1.1-3.1-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3 1.1.1 2.3-.6 3-1.5z" fill="#FFFFFF"/></svg>
     <span>Reservar o meu lugar</span>
   </a>
-  <p data-sticky-note>Lançamento em breve · iPhone · Grátis para começar</p>
+  <p data-sticky-note>Lançamento em breve · iPhone · 14 dias grátis</p>
 </div>
 
 <script src="/site.js?v=3" defer></script>
